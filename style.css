@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   color-scheme: light dark;
   --bg: #f5f6f8;
   --panel: #ffffffcc;
@@ -26,6 +26,7 @@ body {
   color: var(--text);
   font-size: 16px;
   line-height: 1.6;
+  font-synthesis: none;
   padding: 24px;
 }
 
@@ -262,6 +263,13 @@ main {
   border: 1px dashed rgba(16, 24, 40, 0.2);
 }
 
+.bird-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;
+}
 .bird-tagline {
   font-size: 18px;
   margin: 0;
@@ -362,3 +370,9 @@ main {
   color: var(--text);
   white-space: pre-line;
 }
+
+
+
+
+
+
