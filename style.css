@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   color-scheme: light dark;
   --bg: #f5f6f8;
   --panel: #ffffffcc;
@@ -370,6 +370,7 @@ main {
   color: var(--text);
   white-space: pre-line;
 }
+
 
 
 
