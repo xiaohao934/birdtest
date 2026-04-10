@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>鸟格测试 · Bird Persona Lab</title>
+    <meta name="description" content="随机顺序的 28+1 道题，算出你最像哪种鸟。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero" id="hero">
+      <div class="hero__badge">鸟格测试</div>
+      <h1>你是什么鸟？</h1>
+      <p>仅供娱乐，一共28题。</p>
+      <div class="hero__actions">
+        <button type="button" id="jump-to-quiz">开始答题</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel panel--quiz" id="quiz-panel" hidden>
+        <div class="progress">
+          <div class="progress__label" id="progress-text">第 1 / 28 题</div>
+          <div class="progress__bar">
+            <div class="progress__fill" id="progress-bar-fill"></div>
+          </div>
+        </div>
+        <form id="quiz-form">
+          <div id="question-stage" class="question-stage"></div>
+          <div class="nav-controls">
+            <button type="button" id="prev-question" class="ghost">上一题</button>
+            <button type="button" id="next-question">下一题</button>
+            <button type="submit" id="submit-quiz" hidden>生成鸟类画像</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel results" id="result-panel" hidden>
+        <div class="result-identity" id="result-summary">
+          <p class="result-kicker">你是：</p>
+          <h2 class="bird-name" id="bird-name"></h2>
+          <p class="bird-english" id="bird-english"></p>
+          <div class="bird-visual" id="bird-visual">【鸟图占位】</div>
+          <p class="bird-tagline" id="bird-tagline"></p>
+        </div>
+        <div class="result-body" id="bird-description"></div>
+        <div class="result-actions">
+          <button type="button" id="restart-quiz" class="ghost">再测一次</button>
+        </div>
+        <div id="bonus-note" class="bonus-note" hidden></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>⚠️ 仅供娱乐，不构成专业心理测评或建议。数据只在你的浏览器中计算，不会被上传。</p>
+    </footer>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
