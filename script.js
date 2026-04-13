@@ -17,8 +17,8 @@ const birdPrototypes = {
   乌鸫: { W: 35, S: 40, V: 98, M: 80, C: 10, N: 20, P: 35 },
   喜鹊: { W: 35, S: 98, V: 80, M: 25, C: 20, N: 10, P: 40 },
   乌鸦: { W: 95, S: 10, V: 20, M: 95, C: 10, N: 45, P: 50 },
-  珠颈斑鸠: { W: 15, S: 25, V: 10, M: 5, C: 98, N: 10, P: 5 },
-  海鸥: { W: 5, S: 90, V: 90, M: 10, C: 10, N: 10, P: 98 },
+  珠颈斑鸠: { W: 25, S: 30, V: 15, M: 10, C: 88, N: 15, P: 15 },
+  海鸥: { W: 10, S: 85, V: 82, M: 12, C: 15, N: 12, P: 82 },
   雕鸮: { W: 55, S: 5, V: 10, M: 85, C: 10, N: 98, P: 60 },
   游隼: { W: 40, S: 10, V: 10, M: 20, C: 5, N: 20, P: 100 }
 };
@@ -447,10 +447,10 @@ function determineBirdPool(normalized) {
     return ['游隼'];
   }
 
-  if (percent('S') >= 70 && percent('V') >= 65) {
-    if (percent('P') >= 75) return ['海鸥'];
-    if (percent('M') >= 60) return ['乌鸫'];
-    return ['喜鹊'];
+  if (percent('S') >= 60 && percent('V') >= 55) {
+    if (percent('P') >= 55) return ['海鸥', '喜鹊', '乌鸫'];
+    if (percent('M') >= 55) return ['乌鸫', '喜鹊'];
+    return ['喜鹊', '海鸥'];
   }
 
   if (percent('W') >= 70 && percent('M') >= 65) {
@@ -460,8 +460,15 @@ function determineBirdPool(normalized) {
     return ['乌鸦', '夜鹭'];
   }
 
-  if (highestKey === 'C' && percent('M') <= 40 && percent('P') <= 45) {
-    if (percent('W') >= 60) return ['夜鹭'];
+  if (
+    highestKey === 'C' &&
+    percent('C') >= 75 &&
+    percent('M') <= 30 &&
+    percent('P') <= 35 &&
+    percent('S') <= 45 &&
+    percent('V') <= 45
+  ) {
+    if (percent('W') >= 65) return ['夜鹭'];
     return ['珠颈斑鸠'];
   }
 
