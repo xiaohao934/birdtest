@@ -26,56 +26,64 @@ const birdPrototypes = {
 const birdMeta = {
   乌鸫: {
     en: "Blackbird",
-    image: "images/wudong.webp",
+    imageWebp: "figure%20v2/compressed/wudong.webp",
+    imageJpg: "figure%20v2/wudong.jpg",
     tagline: "我会一直看着你的，永远",
     color: "#2f2f36",
     description: `乌鸫，你好。你总是习惯站在离热附近，在别人眼里你或许有些抽离，但实际上你的心思比大多数人都要细腻。很多时候，别人以为你只是在发呆，但其实你的大脑正在默默记录周围发生的一切。你未必是那个急于在人群中表达自我的人，却往往是把事情看得最透彻的那个。你心里一直记着那些别人早已遗忘的微小细节和微妙情绪。你偶尔也会觉得自己是不是太敏感了，想得太多，但正是这种不动声色的观察力，让你在复杂的人际关系里总能保留一份清醒。`
   },
   喜鹊: {
     en: "Magpie",
-    image: "images/xique.webp",
+    imageWebp: "figure%20v2/compressed/xique.webp",
+    imageJpg: "figure%20v2/xique.jpg",
     tagline: "喳。",
     color: "#1f7a8c",
     description: `喜鹊，见到你很高兴，你身上总有一种让人无法忽视的生命力。你似乎天生就懂得如何与这个世界打交道，无论把你放到什么陌生的环境里，你总能很快找到属于自己的位置。身边的人往往只看到你阳光的一面，觉得你每天都无忧无虑，却很少有人察觉，你在人群散去后偶尔也会感到深深的疲惫和空虚。你对新鲜事物有着天然的好奇心，反应极快，能在关键时刻自然而然地接住别人抛来的情绪。你从未刻意去讨好谁，你只是喜鹊罢了。`
   },
   乌鸦: {
     en: "Crow",
-    image: "images/wuya.webp",
+    imageWebp: "figure%20v2/compressed/wuya.webp",
+    imageJpg: "figure%20v2/wuya.jpg",
     tagline: "I know......",
     color: "#222831",
     description: `乌鸦，其实很多事情你心里比谁都清楚。你常常给人一种带着点距离感的第一印象。很多时候，你看着别人为了鸡毛蒜皮的事情争论不休，心里早已看透了事物的本质和走向，只是觉得没有必要点破。你内心深处有着一套非常严密的逻辑系统，只对真正的朋友敞开。你偶尔也会感到一种无人理解的孤独，但你可是乌鸦，乌鸦朋友会与你相伴。`
   },
   珠颈斑鸠: {
     en: "Spotted Dove",
-    image: "images/zhujingbanjiu.webp",
+    imageWebp: "figure%20v2/compressed/zhujingbanjiu.webp",
+    imageJpg: "figure%20v2/zhujingbanjiu.jpg",
     tagline: "古固咕？古固咕！",
     color: "#b07b64",
     description: `珠颈斑鸠，慢一点也没关系，这大概是你潜意识里最真实的生活哲学。在这个每个人都在拼命赶路、充满焦虑的时代，你似乎总是保持着一种略带迟缓的从容。很多人会认为你好脾气、随遇而安，甚至有点迷糊，但其实你内心对于自己想要什么、不想要什么有着非常坚定的底线。你只是不想把力气花在无谓的内耗和比较上。遇到突发状况时，你本能的反应往往是先愣一下，然后按着自己的步调慢慢去消化。你身上那种不战而屈人之兵的松弛感，其实掩盖了你内心深处那份不愿随波逐流的倔强。`
   },
   海鸥: {
     en: "Seagull",
-    image: "images/haiou.webp",
+    imageWebp: "figure%20v2/compressed/haiou.webp",
+    imageJpg: "figure%20v2/haiou.jpg",
     tagline: "来都来了，整点薯条",
     color: "#1f9ac7",
     description: `海鸥，你又在寻找下一个落脚点了对吧。你是一个非常注重活在当下的人，对你来说，与其花大量时间去纠结未知的风险和复杂的心理活动，不如先下手为强。你身上有一种特别实在的行动力，只要看到机会，或者察觉到对自己有利的信号，就会毫不犹豫地采取行动。有时候，别人会觉得你做事全凭直觉、甚至有点鲁莽，但其实你有着自己独特的生存智慧。你不喜欢那些虚无缥缈的承诺和画大饼，你更看重抓在手里的切实回报。哪怕偶尔扑个空或者走弯路，你也能很快调整心态，潇洒地飞向下一片海域。`
   },
   雕鸮: {
     en: "Eagle-Owl",
-    image: "images/diaoxiao.webp",
+    imageWebp: "figure%20v2/compressed/diaoxiao.webp",
+    imageJpg: "figure%20v2/diaoxiao.jpg",
     tagline: "晚上见",
     color: "#7c5527",
     description: `雕鸮，独处的时候才是你思绪最活跃的时刻。你和大多数人的生物钟或是情绪节奏似乎总存在着某种微妙的时差。在常规的社交里，你可能会显得有些不温不火，甚至带着点敷衍。但只要到了你觉得安全的私人空间，或者面对你真正感兴趣的事物，你潜藏的敏锐和深刻就会瞬间苏醒。你并不喜欢时时刻刻都保持高昂的斗志，你习惯把最深邃的思考、最真实的情感，都留给那个懂你的人。你的光芒总是选择性地绽放，绝不轻易示人。`
   },
   游隼: {
     en: "Falcon",
-    image: "images/yousun.webp",
+    imageWebp: "figure%20v2/compressed/yousun.webp",
+    imageJpg: "figure%20v2/yousun.jpg",
     tagline: "你的眼神锐利如同翱翔天空的游隼",
     color: "#c9510c",
     description: `游隼，其实连你自己都常常被自己偶尔爆发出来的潜能吓到吧。在日常放松的状态下，你可能看起来十分平和，甚至带点漫不经心，完全没有任何攻击性。你骨子里觉得大多数日常琐事根本不值得你全力以赴。然而，一旦遇到真正让你认为非赢不可的目标，你就会在一瞬间切换状态，展现出极其可怕的专注度与决断力。你平时有多随性，认真起来就有多致命。`
   },
   夜鹭: {
     en: "Night Heron",
-    image: "images/yelu.webp",
+    imageWebp: "figure%20v2/compressed/yelu.webp",
+    imageJpg: "figure%20v2/yelu.jpg",
     tagline: "天气好极了，鱼几乎没有",
     color: "#4f6a92",
     description: `夜鹭，你又在默默观察这个世界了吧。很多人第一眼看你，会觉得你常常处于一种放空的状态，但其实他们根本不知道在你那看似毫无波澜的外表下，心思有多么缜密。当你遇到那些表面光鲜实则让人失望的人和事时，你内心往往会上演极其丰富的内心戏，但最终表现出来的，却只是一丝带着黑色幽默的礼貌与从容。你太懂得分辨什么是虚张声势，什么是真正有价值的目标。所以，当别人都在为了凑热闹而急着随波逐流时，你更愿意独自站在岸边静静地等一等，用你那独特的节奏，慢慢衡量今天这趟浑水到底值不值得你亲自下场。`
@@ -501,8 +509,15 @@ function renderResults(summary) {
   birdTaglineEl.style.color = color;
   birdVisualEl.style.borderColor = `${color}55`;
   birdVisualEl.style.color = color;
-  if (meta.image) {
-    birdVisualEl.innerHTML = `<img src="${meta.image}" alt="${top.name}" loading="lazy" decoding="async" />`;
+  if (meta.imageWebp || meta.imageJpg) {
+    const fallbackSrc = meta.imageJpg || meta.imageWebp;
+    const pictureMarkup = `
+      <picture>
+        ${meta.imageWebp ? `<source srcset="${meta.imageWebp}" type="image/webp">` : ''}
+        <img src="${fallbackSrc}" alt="${top.name}" loading="lazy" decoding="async" />
+      </picture>
+    `;
+    birdVisualEl.innerHTML = pictureMarkup;
   } else {
     birdVisualEl.textContent = '【鸟图占位】';
   }
@@ -567,6 +582,22 @@ if (jumpBtn) {
 }
 
 // 初始保持标题页，等待用户点击开始
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
